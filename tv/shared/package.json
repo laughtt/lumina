@@ -1,0 +1,6 @@
+{
+  "name": "@lumina/tv-shared",
+  "private": true,
+  "main": "src/index.ts",
+  "peerDependencies": { "react": "*", "react-native": "*" }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "lumina",
+  "private": true,
+  "workspaces": ["api", "web", "tv/shared"],
+  "scripts": {
+    "dev": "bash scripts/dev.sh",
+    "seed": "npm run seed -w api",
+    "build": "npm run build -w web && npm run build -w api"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my lumina",
+      "intents": [
+        {
+          "name": "AskIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "LUMINA_QUESTION"
+            }
+          ],
+          "samples": [
+            "{question}",
+            "tell me {question}",
+            "I want to know {question}"
+          ]
+        },
+        {
+          "name": "LinkIntent",
+          "slots": [
+            {
+              "name": "code",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "my code is {code}",
+            "the code is {code}",
+            "link code {code}",
+            "link {code}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "LUMINA_QUESTION",
+          "values": [
+            {
+              "name": {
+                "value": "where's Ana"
+              }
+            },
+            {
+              "name": {
+                "value": "where is Ana"
+              }
+            },
+            {
+              "name": {
+                "value": "is my girl coming"
+              }
+            },
+            {
+              "name": {
+                "value": "where's my girl"
+              }
+            },
+            {
+              "name": {
+                "value": "is Ana coming home"
+              }
+            },
+            {
+              "name": {
+                "value": "where is my daughter"
+              }
+            },
+            {
+              "name": {
+                "value": "when is Ana coming"
+              }
+            },
+            {
+              "name": {
+                "value": "what's happening today"
+              }
+            },
+            {
+              "name": {
+                "value": "what day is it"
+              }
+            },
+            {
+              "name": {
+                "value": "is it Sunday"
+              }
+            },
+            {
+              "name": {
+                "value": "what are we doing today"
+              }
+            },
+            {
+              "name": {
+                "value": "what's the date"
+              }
+            },
+            {
+              "name": {
+                "value": "what's next"
+              }
+            },
+            {
+              "name": {
+                "value": "what do I do now"
+              }
+            },
+            {
+              "name": {
+                "value": "what happens next"
+              }
+            },
+            {
+              "name": {
+                "value": "when do I eat"
+              }
+            },
+            {
+              "name": {
+                "value": "what's for lunch"
+              }
+            },
+            {
+              "name": {
+                "value": "when's lunch"
+              }
+            },
+            {
+              "name": {
+                "value": "what's for dinner"
+              }
+            },
+            {
+              "name": {
+                "value": "I'm hungry"
+              }
+            },
+            {
+              "name": {
+                "value": "did I eat"
+              }
+            },
+            {
+              "name": {
+                "value": "did I take my pills"
+              }
+            },
+            {
+              "name": {
+                "value": "do I need my pills"
+              }
+            },
+            {
+              "name": {
+                "value": "did I take my medicine"
+              }
+            },
+            {
+              "name": {
+                "value": "where are my glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "where are my keys"
+              }
+            },
+            {
+              "name": {
+                "value": "who is coming today"
+              }
+            },
+            {
+              "name": {
+                "value": "show me the wedding"
+              }
+            },
+            {
+              "name": {
+                "value": "show me Porto"
+              }
+            },
+            {
+              "name": {
+                "value": "show me the photos"
+              }
+            },
+            {
+              "name": {
+                "value": "tell me about the beach"
+              }
+            },
+            {
+              "name": {
+                "value": "I want to see my family"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

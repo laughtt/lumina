@@ -1,0 +1,58 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DataAndAlerts",
+      "Effect": "Allow",
+      "Action": ["dynamodb:*", "s3:*", "sns:*"],
+      "Resource": [
+        "arn:aws:dynamodb:*:*:table/lumina",
+        "arn:aws:s3:::lumina-*",
+        "arn:aws:s3:::lumina-*/*",
+        "arn:aws:sns:*:*:lumina-*"
+      ]
+    },
+    {
+      "Sid": "Compute",
+      "Effect": "Allow",
+      "Action": ["lambda:*", "scheduler:*", "logs:*"],
+      "Resource": [
+        "arn:aws:lambda:*:*:function:lumina-*",
+        "arn:aws:scheduler:*:*:schedule/default/lumina-*",
+        "arn:aws:logs:*:*:log-group:/aws/lambda/lumina-*",
+        "arn:aws:logs:*:*:log-group:/aws/lambda/lumina-*:*"
+      ]
+    },
+    {
+      "Sid": "ListAndDescribe",
+      "Effect": "Allow",
+      "Action": ["logs:DescribeLogGroups", "lambda:GetAccountSettings", "s3:ListAllMyBuckets", "sts:GetCallerIdentity", "bedrock:ListFoundationModels"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Roles",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateRole", "iam:DeleteRole", "iam:GetRole", "iam:TagRole", "iam:UntagRole", "iam:ListRolePolicies", "iam:ListAttachedRolePolicies",
+        "iam:ListInstanceProfilesForRole", "iam:PutRolePolicy", "iam:GetRolePolicy", "iam:DeleteRolePolicy",
+        "iam:AttachRolePolicy", "iam:DetachRolePolicy", "iam:PassRole",
+        "iam:CreatePolicy", "iam:DeletePolicy", "iam:GetPolicy", "iam:GetPolicyVersion", "iam:ListPolicyVersions",
+        "iam:CreatePolicyVersion", "iam:DeletePolicyVersion", "iam:TagPolicy",
+        "iam:AttachUserPolicy", "iam:DetachUserPolicy", "iam:ListAttachedUserPolicies"
+      ],
+      "Resource": ["arn:aws:iam::*:role/lumina-*", "arn:aws:iam::*:policy/lumina-*", "arn:aws:iam::*:user/*"]
+    },
+    {
+      "Sid": "CloudFrontAndBudget",
+      "Effect": "Allow",
+      "Action": ["cloudfront:*", "budgets:*"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CallClaude",
+      "Effect": "Allow",
+      "Action": "bedrock-mantle:CreateInference",
+      "Resource": "*"
+    }
+  ]
+}

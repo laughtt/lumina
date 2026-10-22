@@ -1,0 +1,9 @@
+**/node_modules
+**/.venv
+**/.data
+**/dist
+**/build
+tv/vega
+infra
+.env*
+.git

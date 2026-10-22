@@ -1,0 +1,6 @@
+# cp terraform.tfvars.example terraform.tfvars
+alert_emails = ["ana@example.com", "luis@example.com"]
+budget_email = "you@example.com"
+
+# Local demo first. Flip to true once api/dist and agent/build exist (needed for the judges' live MCP URL).
+deploy_cloud = false

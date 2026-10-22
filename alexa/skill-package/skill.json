@@ -1,0 +1,44 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Lumina",
+          "summary": "Answers everyday questions in the family's own words.",
+          "description": "Lumina answers the questions a person with memory loss asks again and again, in the words their family approved.",
+          "examplePhrases": [
+            "Alexa, ask my lumina where's Ana",
+            "Alexa, ask my lumina what's happening today",
+            "Alexa, open my lumina"
+          ],
+          "keywords": [
+            "memory",
+            "family",
+            "care"
+          ]
+        }
+      },
+      "category": "HEALTH_AND_FITNESS",
+      "distributionCountries": [
+        "US"
+      ],
+      "isAvailableWorldwide": false
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "https://i6fya4jsl7snqhu6z6qkffmr7q0ubogx.lambda-url.us-east-1.on.aws/alexa",
+          "sslCertificateType": "Wildcard"
+        }
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "manifestVersion": "1.0"
+  }
+}
